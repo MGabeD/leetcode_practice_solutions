@@ -40,3 +40,17 @@ def countPrefixes(words, s):
         if works:
             proper_words += 1
     return proper_words
+
+
+# Came back to my computer - read what I had written, I was thinking about better ways to solve this without being stuck
+# on the inbuilt short cuts. Iterating through was a bad solution I got to in about 2 min after reading it. Taking a
+# step back and thinking about it kinda made me realize that there is still a lesson to learn from the super easy ones
+# what I should've done is gotten this solution then thought about how to make it faster. I could've done something like
+# this - which is more efficient and still sticking to my beliefs about the reasoning to do these at the top
+
+def ct_prefixes(words, s):
+    prp_words = 0
+    for word in words:
+        if s[:len(word)] == word:
+            prp_words +=1
+    return prp_words

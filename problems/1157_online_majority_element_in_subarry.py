@@ -174,3 +174,21 @@ tester = MajorityChecker(arr = [1,1,2,2,1,1])
 print(tester.query(0,5,4))
 
 
+# Review of my own work - After reflecting there is a data structure I could've used for doing this as well which I
+# think the problem was actually geared at. In the future maybe I shouldn't get as pigeon-holed into a single algorithm
+# and when something doesn't work take a bigger step back rather than looking for optimizations.
+# THAT being said I did get the fastest grouping of answers on leetcode so I found a great solution even if it is not
+# the one I think the problem was looking for
+
+# Some good things I did was to start with a problem I knew I could solve, it in O(n) then step by step get faster
+# O(n) -> O(m*log(n)) -> O(20*log(n)) == O(log(n) is a good way of iteratively improving I really like that i did this
+# approach and I think this is the right way of doing it in an interview. I should keep doing this as it assures I get
+# something which answers the question even if it is very very slow.
+# I managed to grab the pre-computing idea very early on and this was a good strand to catch. I should keep looking for
+# this in any class based leetcode question since the __init__ should be a dead give away i should be building something
+# faster and that the obvious answer which is using the base data structure is not good enough. In the future I should
+# maybe try to see if I can find the path instantly there so I don't waste time in the O(n) solution just proving I can
+# solve the question poorly. For me the hard part was the sampling jump - took ~15 min to come up with that which is a
+# little too slow. If I got this in an interview I would've been stuck in m*log(n) which is not good enough - so cutting
+# out the thinking and implementing the easy solution will save me a bit of time and hopefully make the shift to hard
+# problem solving faster and easier in the future.

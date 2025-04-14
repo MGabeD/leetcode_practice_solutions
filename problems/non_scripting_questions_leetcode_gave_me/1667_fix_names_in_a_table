@@ -1,0 +1,9 @@
+
+I didn't know that leetcode gave sql queries as questions but I might as well do it since this one is super easy and
+I'll just do another question after this
+
+select user_id, concat(
+    UPPER(SUBSTRING(name, 1, 1)),
+    LOWER(SUBSTRING(name, 2))
+) as name from Users
+order by user_id

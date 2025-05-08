@@ -47,10 +47,19 @@ class Solution(object):
                 cur = queue.popleft()
                 if biggest < cur.val:
                     biggest = cur.val
-                queue.extend(cur.left)
-                queue.extend(cur.right)
+                if cur.left is not None:
+                    queue.append(cur.left)
+                if cur.right is not None:
+                    queue.append(cur.right)
             data.append(biggest)
         return data
 
 # Pretty sure this is the fastest possible but leetcode is down for maintanence for the rest of todya so cna't test it
+
+# Went back and ran it had some simple obv issues. I am for some reason not in th efastest bucket. I looked at the best
+# examples and they are functionally the same... If not slower. using max(x,y) adds a funciton overhead rather than the
+# if to straight setting - minor higher overhead. The other dif is with if cur.left vs cur.left is not None - Need to
+# check what this actually compiles into to tell which is better but optimizations at this level are a waste. Not sure
+# I trust leetcode on this one since each tim I hit sumbitwith the same answer my runtime has a wild variance
+
 

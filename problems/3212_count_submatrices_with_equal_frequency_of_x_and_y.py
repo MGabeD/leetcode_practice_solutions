@@ -41,3 +41,9 @@ print(sol.numberOfSubmatrices([["X","Y","."],["Y",".","."]]))
 # simplifying these before my first run - sometimes they are unnecessary - I don't have evidence of this above since I
 # only did one submisison but I did 2 rounds of simplifications before this submission - these should be istant so I
 # don't build up this "debt" of these
+
+# Also holy ***** i need to fix my typing - my right hand is jumping around again and missing keys and tilting in- I \
+# think i need a different keyboard / fix my posture / get a split one since my wrists are turning in and my right hand
+# is compensating by giving y & u & 7 & 6 to my middle finger... it is really slowing me down and making it harder to
+# code since it is breaking flow now tthat I have realized it. I have been getting these weird cramps in my palm and
+# this morning looked into why - found this and now I can't unsee it. when did I develop this.
